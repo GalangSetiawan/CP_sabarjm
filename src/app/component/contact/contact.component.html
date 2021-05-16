@@ -1,0 +1,95 @@
+<!-- UIkit CSS -->
+
+
+<section id="contact">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<div uk-scrollspy="cls: uk-animation-slide-left; target: h2; delay: 300; repeat: true">
+					<h2 class="uk-margin-large-top uk-margin-medium-bottom  uk-text-center uk-position-relative headerText" >Kontak</h2>
+				</div>
+
+
+				<div class="section-title">
+					<div class="uk-margin uk-width-xlarge ct-u-size22 ct-u-fontWeight300 uk-margin-large-bottom">
+						<p>Untuk mengetahui informasi lebih lanjut, silahkan hubungi kami melalui kontak di bawah ini</p>
+						<p>
+							Telp 1: <a uk-tooltip="title: Hubungi via WhatsApp; pos: top-left" target="_blank" href="https://wa.me/6285607685227?text=Haloo%20CV.%20Sabar%20MJ%0ASaya%20ingin%20berkonsultasi%20tentang%20konstruksi%20rumah%20saya%20%3A)">(+62) 856-0768-5227</a> <br />
+							Telp 2:  <a uk-tooltip="title: Hubungi via WhatsApp; pos: top-left" target="_blank" href="https://wa.me/6285732000500?text=Haloo%20CV.%20Sabar%20MJ%0ASaya%20ingin%20berkonsultasi%20tentang%20konstruksi%20rumah%20saya%20%3A)">(+62) 857-3200-0500</a> <br />
+							Email: cvsabarjm@gmail.com<br />
+						</p>
+
+						<br>
+						<p>
+							Jl Raya Candi VC No 716 <br>
+							RT/RW 13/05 Karang Besuki, Sukun <br>
+							Kota Malang <br>
+							Jawa Timur <br>
+						</p>
+					</div>
+
+				</div>
+
+
+				<div class="section-title">
+					<h1 class="uk-heading-hero companyLegend">Yuk' Tanya</h1>
+					<div class="uk-divider-small"></div>
+				</div>
+				<div class="contact-form ct-u-size22 ct-u-fontWeight300" >
+					<form id="contact-form" action="https://formspree.io/f/mpzkqdyl" method="POST" >
+                        <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+							<div>
+								<div class="uk-card">
+								  	<input type="text" name="name" id="form-s-text" placeholder="Masukan Nama Kamu..." class="uk-input" [(ngModel)]="formInput.name" (ngModelChange)="modelChange($event,'name')" required>
+								  	<p *ngIf="this.formMessage.name != ''" class="uk-text-left"><span class="uk-text-danger">{{ formMessage.name }}</span></p>
+								</div>
+							</div>
+							<div>
+								<div class="uk-card">
+									<input type="email" name="_replyto" id="form-s-text" placeholder="Masukan Alamat Email Kamu..." [(ngModel)]="formInput.email" (ngModelChange)="modelChange($event,'email')" class="uk-input" required>
+									<p *ngIf="this.formMessage.email != ''" class="uk-text-left"><span class="uk-text-danger">{{ formMessage.email }}</span></p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+							<div>
+								<div class="uk-card">
+									<input type="text" name="whatsapp" maxlength="15" id="form-s-text" [(ngModel)]="formInput.whatsapp" (ngModelChange)="modelChange($event,'whatsapp')"  onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" placeholder="Masukan Nomor WhatsApp / Telepon Kamu..." class="uk-input" required>
+									<p *ngIf="this.formMessage.whatsapp != ''" class="uk-text-left"><span class="uk-text-danger">{{ formMessage.whatsapp }}</span></p>
+								</div>
+							</div>
+							<!-- <div>
+								<div class="uk-card"> -->
+								  <input type="hidden" name="_subject" id="form-s-text" placeholder="Masukan Subject Email..." value="Pesan website SabarJM.com" [(ngModel)]="formInput.subject" (ngModelChange)="modelChange($event,'subject')" class="uk-input" required>
+								<!-- </div>
+							</div> -->
+						</div>
+						
+						<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+							<div>
+								<div class="uk-card">
+									<textarea name="message" class="uk-textarea" placeholder="Tulis Pesanmu disini..." [(ngModel)]="formInput.message" (ngModelChange)="modelChange($event,'message')" rows="6" required></textarea>
+									<p *ngIf="this.formMessage.message != ''" class="uk-text-left"><span class="uk-text-danger">{{ formMessage.message }}</span></p>
+								</div>
+							</div>
+						</div>
+							
+						<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+							<div>
+								<div class="uk-card">
+									<button style="font-size: 15px !important;font-weight: 400 !important;letter-spacing: 2px !important;" type="submit" class="uk-button uk-button-secondary uk-width-1-1 uk-margin-small-bottom uk-button-large" (click)="onSubmit()" [disabled]="disabledButton">KIRIM PESAN <div *ngIf="submitOK" uk-spinner></div></button>
+
+								  
+								</div>
+							</div>
+						</div>
+           			  	
+					</form>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+</section>

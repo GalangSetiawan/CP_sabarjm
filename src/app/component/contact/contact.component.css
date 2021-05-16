@@ -1,0 +1,33 @@
+/* contact section  */
+#contact .form-control {
+    background: transparent;
+    border: 1px solid #f0f0f0;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 16px;
+    margin-bottom: 16px;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  #contact .form-control:hover {
+    border-color: #999;
+  }
+  
+  #contact input {height: 55px;}
+  
+  #contact button[type='submit']:active:enabled {
+    background: #242424 !important;
+    border: none;
+    color: #ffffff;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    letter-spacing: 2px !important;
+    transition: all 0.4s ease-in-out;
+    margin-top: 10px;
+    height: 55px;
+  }
+  
+  #contact button[type='submit']:hover:enabled {
+    background: #f1c11a !important;
+  }
+  

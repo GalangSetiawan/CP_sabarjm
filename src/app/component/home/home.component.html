@@ -1,0 +1,211 @@
+
+
+<div class="uk-position-relative uk-background-center-center uk-background-cover bgHomeImage uk-margin-large-bottom" id="home"  uk-height-viewport>
+	<!-- <div class="uk-position-cover uk-cover-container">
+		<video autoplay loop playsinline muted uk-cover>
+			<source src="https://uikitbase.com/library/Blurred Crowd of People Walking.mp4" type="video/mp4">
+		</video>
+	</div> -->
+	<div class="uk-position-cover bgGradient" ></div>
+	<nav class="uk-navbar-container uk-navbar-transparent uk-light">
+		<div class="uk-container">
+			<div uk-navbar>
+				<div class="uk-navbar-left">
+					<a  skipLocationChange (click)="toPageScroll('home')" class="uk-navbar-item uk-logo">
+						<img src="./assets/img/logo2.png" width="50" alt="Logo">
+					</a>
+				</div>
+				<div class="uk-navbar-center">
+					<ul class="uk-navbar-nav uk-visible@m">
+						<li class="uk-active"><a skipLocationChange (click)="toPageScroll('home')">Beranda</a></li>
+						<li class="uk-active"><a skipLocationChange (click)="toPageScroll('about')">Tentang Kami</a></li>
+						<li class="uk-active"><a skipLocationChange (click)="toPageScroll('services')">Tawaran</a></li>
+						<li class="uk-active"><a skipLocationChange (click)="toPageScroll('galery')">Galeri</a></li>
+						<li class="uk-active"><a skipLocationChange (click)="toPageScroll('contact')">Kontak</a></li>
+					</ul>
+				</div>
+				<div class="uk-navbar-right">
+					<ul class="uk-navbar-nav uk-visible@m">
+						<li>
+							<div class="uk-navbar-item">
+								<!-- <a href="#" class="uk-button uk-button-small uk-button-default">Request a quote</a> -->
+							</div>
+						</li>
+					</ul>
+					<a href="#modal-mobile-nav" class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle></a>
+				</div>
+
+				<div id="modal-mobile-nav" class="uk-modal-full" uk-modal>
+					<div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+						<button class="uk-modal-close-full uk-close-large" type="button" id="btnCloseMenu" skipLocationChange (click)="btnCloseMenu()" uk-close></button>
+						<div class="uk-width-large uk-padding-large">
+							<ul class="uk-nav-primary uk-nav-parent-icon ct-u-size22 ct-u-fontWeight300" uk-nav>
+								<li><a skipLocationChange (click)="toPageScroll('home')">Beranda</a></li>
+								<li><a skipLocationChange (click)="toPageScroll('about')">Tentang Kami</a></li>
+								<li><a skipLocationChange (click)="toPageScroll('services')">Tawaran</a></li>
+								<li><a skipLocationChange (click)="toPageScroll('galery')">Galeri</a></li>
+								<li><a skipLocationChange (click)="toPageScroll('contact')">Kontak</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</nav>
+	<div class="uk-position-relative uk-container uk-container-small uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+		<div class="uk-section uk-section-regular uk-width-1-1 uk-light">
+			<div class="uk-flex uk-text-center uk-flex-middle uk-flex-center">
+				<div class="uk-width-1-1">
+					<h1 class="uk-heading-small">KAMI MELAYANI DENGAN PELAYANAN TERBAIK</h1>
+					<div class="uk-text-lead">Kualitas bangunan, profesionalisme kerja dan kepuasan konsumen adalah tujuan kami. karena kerja kita adalah ibadah kita</div>
+					<div class="uk-margin-large-top" uk-parallax="opacity: 0,1,1; y: 50,0,0; x: -50,-50,0; scale: 0.5,1,1; viewport: 0.5;">
+						<p>
+							<a skipLocationChange (click)="toPageScroll('services')" class="uk-button uk-button-default uk-button-xlarge">Lihat Tawaran</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- section About -->
+
+<div class="container uk-padding-large uk-margin-large-top uk-margin-large-bottom" id="about">
+	<div class="row">
+		<div class="col-md-12" uk-scrollspy="cls: uk-animation-slide-left; target: p; delay: 300; repeat: true">
+			<p class="uk-heading-large fontOrelega" style="text-align: right;">Bukti Kualitas kami adalah servis gratis selama masa garansi.</p>
+			<p class="uk-heading-small fontOrelega" style="text-align: left;" uk-scrollspy-class="uk-animation-slide-right">Sabar JM.</p>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="container uk-margin-large-top" >
+
+	<section class="story-section company-sections ct-u-paddingBoth100 paddingBothHalf noTopMobilePadding" >
+		<div class="container text-center" uk-scrollspy="cls: uk-animation-slide-left; target: .animateScroll; delay: 300; repeat: true">
+
+			<div class="row ">
+				<div class="col-md-8 offset-2" >
+					<div class="uk-card-media-left text-cente" >
+						<img src="./assets/img/logo2.png" class="animateScroll" uk-scrollspy-class="uk-animation-scale-up" style="width:300px" alt="" >
+					</div>
+				</div>
+				
+			</div>
+
+			<h2 class="animateScroll">
+				TENTANG KAMI
+			</h2>
+			<h3 class="animateScroll companyLegend" uk-scrollspy-class="uk-animation-slide-right">
+				Sabar JM (General Contractor)
+			</h3>
+			<div class="col-sm-8 offset-sm-2" >
+				<div>
+					<div class="red-border">
+					&nbsp;
+				</div>
+				<p class="ct-u-size22 ct-u-fontWeight300 marginTop40 animateScroll" >
+					Tahun 2019 mulai menyediakan jasa renovasi dan pembangunan rumah di sekitar wilayah tempat tinggal.waktu terus berjalan dan selanjutnya pada Th 2021 mendaftarkan diri menjadi sebuah perusahaan berbadan hukum (CV) Dengan nama CV SABAR JAYA MAKMUR (CV SABAR JM) dengan No AHU-0013926-AH.01.14 Th 2021 tanggal 17 Februari 2021.
+					CV SABAR JM didukung dengan tenaga arsitek yang berpengalaman dan siap bersaing dengan kontraktor - kontraktor yang ada.
+				</p><!-- <a class="ct-u-marginTop60 btn btn-solodev-red btn-fullWidth-sm ct-u-size19" href="#">Learn More</a> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+<!-- section Feature -->
+<div class="uk-section customBackground uk-margin-large-top" id="services">
+	<div class="uk-container">
+
+        <div class="col-md-12 uk-position-relative" uk-scrollspy="cls: uk-animation-slide-left; target: .uk-text-center ; delay: 300; repeat: true">        
+            <h2 class=" uk-text-center uk-margin-medium-top text-warning headerText" uk-scrollspy-class="uk-animation-slide-right" style="position:relative">Tawaran Kami</h2>
+            <p class="uk-text-center  uk-position-relative ct-u-fontWeight300 ct-u-size22 uk-light">
+				Kami menyediakan jasa antara lain Pembangunan Rumah dari nol - Selesai/Serah terima kunci, Renovasi Rumah, Instalasi listrik, Sanitasi, Kanopi, Pagar, Taman, Kolam, Alumunium, dll.
+				Kami bantu sesuai Budget dan FREE Konsultasi dan Survey Lokasi.
+			</p>
+        </div>
+
+		<div class="uk-child-width-1-3@m uk-grid-match uk-text-center uk-margin-large-top" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: true" >
+			<div>
+				<div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline">
+					<h5 class="uk-card-title text-warning companyLegend">Bangun Rumah</h5>
+                        <div class="uk-card-media-left">
+                            <img src="./assets/img/undraw_under_construction_46pa.png" style="width:100px" alt="" >
+                        </div>
+                        <p class="companyLegend">
+							Pembangunan rumah dari 0 - Selesai/Serah terima kunci,dengan sistem Borong Kerja atau Borong Kerja + Material  Sesuai Permintaan dan Budget Konsumen.
+						</p>
+				</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline" uk-scrollspy-class="uk-animation-slide-top">
+					<h5 class="uk-card-title text-warning companyLegend">Renovasi Rumah</h5>
+                    <div class="uk-card-media-left">
+                        <img src="./assets/img/undraw_at_home_octe.png" style="width:100px" alt="" >
+                    </div>
+					<p class="companyLegend">
+						Menyediakan jasa bongkar,buang bongkaran,Pasang/Renovasi sesuai permintaan dan budget Konsumen.
+					</p>
+				</div>
+			</div>
+			<div>
+				<div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-card-body uk-inline">
+					<h5 class="uk-card-title text-warning companyLegend">Installasi Property</h5>
+                    <div class="uk-card-media-left">
+                        <img src="./assets/img/undraw_visual_data_b1wx.png" style="width:100px" alt="" >
+                    </div>
+					<p class="companyLegend">
+						Instalasi listrik, Sanitasi, Kanopi, Pagar, Taman, Kolam, Alumunium, dll. Kami menyediakan jasa tenaga berpengalaman dan profesional serta menggunakan bahan terbaik dan berkualitas SNI.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- section Gallery -->
+<div class="uk-card uk-card-body uk-padding-large uk-card-default uk-background-top-right customBackground2 " id="galery">
+
+	<div uk-scrollspy="cls: uk-animation-slide-left; target: h2; delay: 300; repeat: true">
+		<h2 class="uk-margin-large-top uk-text-center uk-position-relative headerText" >Galeri</h2>
+	</div>
+
+	<div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-4@s uk-text-center uk-margin-large-top" uk-grid uk-lightbox="animation: slide" uk-height-match="target: > div > .uk-inline" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-inline; delay: 300; repeat: true">
+		<div class="uk-card uk-cover-container" *ngFor="let data of imageList" >
+			<a class="uk-inline" attr.id="{{data.id}}">
+				<canvas width="400" height="400"></canvas>
+				<img [src]="data.imgLink" alt="" uk-cover (click)="generateCaption(data)" >
+			</a>
+		</div>
+	</div>
+
+</div>
+
+
+ 
+
+<div class="uk-margin-large-top uk-margin-large-bottom">
+	<iframe 
+	src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.96303300781773!2d112.60044744300238!3d-7.956665061126477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788266ec847a9f%3A0x435884e8e086b78f!2sJl.%20Raya%20Candi%20VC%20No.716%2C%20Karangbesuki%2C%20Kec.%20Sukun%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065149!5e0!3m2!1sen!2sid!4v1621095345768!5m2!1sen!2sid"	style="width: 100%; height: 450px;" 
+	allowfullscreen="" 
+	loading="lazy">
+	</iframe>
+</div>
+
+<app-contact></app-contact>
+
+<app-footer></app-footer>
